@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SupergradientSolvty-Node extension for KNIME Workbench
+Bundle-SymbolicName: ru.nsc.interval.knime; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: supergradientsolvty.jar,
+ lib/Supergradient-Solvty.jar
+Bundle-Activator: ru.nsc.interval.knime.SupergradientSolvtyNodePlugin
+Bundle-Vendor: Vladimir Misyura
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: ru.nsc.interval.knime;version="0.0.1";
+  uses:="org.osgi.framework,
+   org.eclipse.core.runtime,
+   org.knime.core.node.defaultnodesettings,
+   org.knime.core.node,
+   net.java.jinterval.interval.set"
+
